@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe "products/show", type: :view do
+RSpec.describe "admin/products/show", type: :view do
   before(:each) do
     @product = assign(:product, Product.create!(name: 'name1', price: '9.99', quantity: 42))
   end
@@ -9,7 +9,7 @@ RSpec.describe "products/show", type: :view do
     render
     
     expect(rendered).to match /products/
-    # expect(rendered).to match /name/
+    expect(rendered).to match /name/
     # expect(rendered).to match /price/
     # expect(rendered).to match /quantity/
     # expect(rendered).to match /price/
