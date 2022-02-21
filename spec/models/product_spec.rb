@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+# spec/models/product_spec.rb
 
 require 'rails_helper'
 
@@ -35,6 +35,14 @@ RSpec.describe Product, type: :model do
 
       it 'throws an explicit error' do
         expect { described_class.create!(params) }.to raise_error("Validation failed: Quantity can't be blank")
+      end
+    end
+
+    context 'when all params are missing' do
+      let(:params) { { name: '', price: nil, quantity: nil } }
+
+      it 'throws an explicit error' do
+        expect { described_class.create!(params) }.to raise_error("Validation failed: Name can't be blank, Price can't be blank, Quantity can't be blank")
       end
     end
   end
