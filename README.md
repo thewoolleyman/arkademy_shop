@@ -13,6 +13,10 @@ Things you may want to cover:
 
 * Database creation
 
+Accessing from the command line:
+
+`psql -h /Users/cwoolley/workspace/gitlab-development-kit/postgresql -U arkademy -d arkademy_shop_development`
+
 * Database initialization
 
 * How to run the test suite
