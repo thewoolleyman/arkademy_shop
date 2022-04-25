@@ -14,4 +14,10 @@ RSpec.describe "products/index", type: :view do
     expect(rendered).to match /name1/
     expect(rendered).to match /name2/
   end
+
+  it 'allows to add to cart' do
+    render
+
+    expect(rendered).to match(/shopping-cart/)
+  end
 end

@@ -16,4 +16,10 @@ RSpec.describe "products/show", type: :view do
     # expect(rendered).to match /9.99/
     # expect(rendered).to match /42/
   end
+
+  it 'allows to add to cart' do
+    render
+
+    expect(rendered).to match(/shopping-cart/)
+  end
 end

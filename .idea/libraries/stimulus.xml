@@ -1,0 +1,20 @@
+<component name="libraryTable">
+  <library name="stimulus" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$USER_HOME$/.asdf/installs/ruby/3.1.0/lib/ruby/gems/3.1.0/gems/stimulus-rails-1.0.2/app/assets/javascripts/stimulus-autoloader.js" />
+        <item url="file://$USER_HOME$/.asdf/installs/ruby/3.1.0/lib/ruby/gems/3.1.0/gems/stimulus-rails-1.0.2/app/assets/javascripts/stimulus-importmap-autoloader.js" />
+        <item url="file://$USER_HOME$/.asdf/installs/ruby/3.1.0/lib/ruby/gems/3.1.0/gems/stimulus-rails-1.0.2/app/assets/javascripts/stimulus-loading.js" />
+        <item url="file://$USER_HOME$/.asdf/installs/ruby/3.1.0/lib/ruby/gems/3.1.0/gems/stimulus-rails-1.0.2/app/assets/javascripts/stimulus.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$USER_HOME$/.asdf/installs/ruby/3.1.0/lib/ruby/gems/3.1.0/gems/stimulus-rails-1.0.2/app/assets/javascripts/stimulus-autoloader.js" />
+      <root url="file://$USER_HOME$/.asdf/installs/ruby/3.1.0/lib/ruby/gems/3.1.0/gems/stimulus-rails-1.0.2/app/assets/javascripts/stimulus-importmap-autoloader.js" />
+      <root url="file://$USER_HOME$/.asdf/installs/ruby/3.1.0/lib/ruby/gems/3.1.0/gems/stimulus-rails-1.0.2/app/assets/javascripts/stimulus-loading.js" />
+      <root url="file://$USER_HOME$/.asdf/installs/ruby/3.1.0/lib/ruby/gems/3.1.0/gems/stimulus-rails-1.0.2/app/assets/javascripts/stimulus.js" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

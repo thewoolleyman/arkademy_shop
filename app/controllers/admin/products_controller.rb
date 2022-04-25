@@ -5,6 +5,7 @@ module Admin
     # GET /products
     def index
       @products = Product.all
+      @current_user = current_user
     end
 
     # GET /products/1
