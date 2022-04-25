@@ -17,11 +17,12 @@ RSpec.describe '/carts', type: :request do
 
   describe 'PATCH /update' do
     it 'renders a successful response' do
-      cart = Cart.create!
-      product_item = ProductItem.create(name: 'test')
-      patch cart_url(id: cart.id, product_item: product_item, add: true, subtract: false)
+      cart = Cart.create!(user: user)
+      product = Product.create!(name: 'test', price: 12.12, quantity: 1)
+      patch cart_url(id: cart.id, cart: { quantity: 3, product_id: product.id})
       expect(response).to be_successful
-      expect(cart.reload.product_items.first).to eq product_item
+      expect(cart.reload.product_items.first.quantity).to eq 3
+      expect(cart.reload.product_items.first.name).to eq 'test'
     end
   end
 
