@@ -1,6 +1,7 @@
 <div class="modal" id="<%= "modal#{product.id}" %>">
   <div class="modal-background"></div>
   <div class="modal-card">
+    <!-- TODO: at some point not only current user will have acess to the cart -->
     <%= form_with url: cart_url(current_user.cart.id), method: :patch, model: current_user.cart do |f| %>
       <header class="modal-card-head">
         <p class="modal-card-title">Add <%= product.name %> to cart</p>

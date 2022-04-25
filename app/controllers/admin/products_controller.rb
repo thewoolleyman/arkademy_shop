@@ -15,12 +15,12 @@ module Admin
 
     # GET /products/new
     def new
-      render :form, locals: { product: Product.new, method: :post, url: admin_products_path }
+      render :edit, locals: { product: Product.new, method: :post, url: admin_products_path }
     end
 
     # GET /products/1/edit
     def edit
-      render :form, locals: { product: product, method: :put, url: admin_product_path(product) }
+      render :edit, locals: { product: product, method: :put, url: admin_product_path(product) }
     end
 
     # POST /products
